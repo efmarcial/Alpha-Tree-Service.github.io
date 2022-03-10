@@ -19,3 +19,15 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.parallax2 {
+    /* The image used */
+    background-image: url('img/background2.jpg');
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
