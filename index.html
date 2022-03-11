@@ -100,14 +100,14 @@
 <section id="aboutSection" class="hero is-fullheight">
 	<div class="hero-body"  >
 		<div class="container-fluid" style="margin-top: 0%;">
-			<div class="w3-container w3-animate-bottom">
+			<div id="aboutHeader" class="">
 				<h1 class="subtitle is-size-2-desktop is-size-3-mobile">20 Years of <strong style="color: rgb(21, 145, 21);">Experience</strong> </h1>
 				<hr>
 			</div>
 			<div class="columns is-desktop">
 				<div class="column ">
-					<div class="w3-container w3-animate-left">
-						<div class="box has-background-warning">
+					<div id="aboutBody1" class="">
+						<div  class="box has-background-warning">
 							<p>At Alpha Tree Services, we are comprised of experts in every 
 								field. We continually educate ourselves on the latest methods and 
 								enviromently certified procedures available. For us, the most essential 
@@ -126,7 +126,7 @@
 				</div>
 
 				<div class="column">
-					<div class="w3-container w3-animate-right">
+					<div id='aboutBody2' class="">
 						<div class="box has-background-warning">
 
 						</div>
@@ -134,7 +134,7 @@
 				</div>
 			</div>
 
-			<div class="w3-container w3-animate-bottom">
+			<div id="aboutHeader2" class="">
 				<h1 class="subtitle is-size-2-desktop is-size-3-mobile">Residential <strong style="color: rgb(21, 145, 21);">Commercial</strong></h1>
 				<hr>
 			</div>
@@ -180,9 +180,40 @@
 	</div>
 </section>
 
-
+<!--JQuery-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!--- Bootstrap scripts -------------->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+	var aboutHeader = $('#aboutHeader');
+	var aboutBody1 = $('#aboutBody1');
+	var aboutBody2 = $("#aboutBody2");
+
+	var aboutHeader2 = $('#aboutHeader2');
+
+	$(window).on('scroll', function(){
+		var scroll_y  = $(this).scrollTop();
+
+		console.log(scroll_y);
+
+		if (scroll_y >= 300){
+			aboutHeader.addClass('w3-container w3-animate-bottom');
+			aboutBody1.addClass('w3-container w3-animate-left')
+			aboutBody2.addClass('w3-container w3-animate-right');
+		} else {
+			aboutHeader.removeClass('w3-container w3-animate-bottom');
+			aboutBody1.removeClass('w3-container w3-animate-left');
+			aboutBody2.removeClass('w3-container w3-animate-right');
+		}
+
+		if (scroll_y >= 600){
+			aboutHeader2.addClass('w3-container w3-animate-bottom');
+
+		}else {
+			aboutHeader2.removeClass('w3-container w3-animate-bottom');
+		}
+	})
+</script>
 
 </body>
 
