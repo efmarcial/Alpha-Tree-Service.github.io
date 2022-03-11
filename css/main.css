@@ -22,11 +22,12 @@ body, html {
 
 .parallax2 {
     /* The image used */
-    background-image: url('img/background2.jpg');
-
-    height: 100%;
-
-    background-attachment: fixed;
+    background-image: url("img/background-green.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
