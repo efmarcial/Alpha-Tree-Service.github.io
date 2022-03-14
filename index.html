@@ -221,36 +221,7 @@
 		})
 	})
 </script>
-<script>
-	var aboutHeader = $('#aboutHeader');
-	var aboutBody1 = $('#aboutBody1');
-	var aboutBody2 = $("#aboutBody2");
 
-	var aboutHeader2 = $('#aboutHeader2');
-
-	$(window).on('scroll', function(){
-		var scroll_y  = $(this).scrollTop();
-
-		console.log(scroll_y);
-
-		if (scroll_y >= 300){
-			aboutHeader.addClass('w3-container w3-animate-bottom');
-			aboutBody1.addClass('w3-container w3-animate-left')
-			aboutBody2.addClass('w3-container w3-animate-right');
-		} else {
-			aboutHeader.removeClass('w3-container w3-animate-bottom');
-			aboutBody1.removeClass('w3-container w3-animate-left');
-			aboutBody2.removeClass('w3-container w3-animate-right');
-		}
-
-		if (scroll_y >= 600){
-			aboutHeader2.addClass('w3-container w3-animate-bottom');
-
-		}else {
-			aboutHeader2.removeClass('w3-container w3-animate-bottom');
-		}
-	})
-</script>
 
 </body>
 
