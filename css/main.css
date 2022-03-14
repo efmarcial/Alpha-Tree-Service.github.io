@@ -43,3 +43,24 @@ body, html {
 .nav-custom {
     text-shadow: 2px 2px 5px black;
 }
+
+.small-6 {
+    width: 80%;
+}
+
+.samll-7 {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1980px) and (min-width:200px) {
+    .about-img {
+        background: transparent url('img/aboutImg1.jpg') 0 0 no-repeat;
+        height: 80%;
+    }
+
+    .about-img2 {
+        background: transparent url('img/image1.jpg') 0 0 no-repeat;
+        height: 80%;
+    }
+}
