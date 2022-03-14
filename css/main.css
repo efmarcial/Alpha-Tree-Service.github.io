@@ -32,3 +32,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.nav-custom {
+    text-shadow: 2px 2px 5px black;
+}
