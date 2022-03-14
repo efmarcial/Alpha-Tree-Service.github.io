@@ -14,10 +14,17 @@ body, html {
     height: 100%;
 
     /* Create the parallax scrolling effect */
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and (max-width:720px) and (min-width:300px){
+    .parallax {
+        background-attachment: scroll;
+    }
+    
 }
 
 .parallax2 {
