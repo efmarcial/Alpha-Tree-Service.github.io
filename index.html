@@ -26,14 +26,11 @@
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+
 
 	<!-- Links to font awesome -->
 	<script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
 
-	<!-- Slider -->
-	<link rel="stylesheet" media="screen" href="css/owl.carousel.css">
-	<link rel="stylesheet" media="screen" href="css/owl.theme.css">
 
 	<style type="text/css">
 		html {
@@ -44,7 +41,7 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg  navbar-light bg-light is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
+	<nav class="navbar navbar-expand-lg  navbar-dark bg-dark is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
         <a class="navbar-brand" href="index.html">
             <i class="fa-solid fa-tree fa-2x" style="color: rgb(2, 139, 2);"></i>
         </a>
@@ -132,110 +129,7 @@
 </section>
 <!--Services------------------------------------>
 <!--==================================================================-->
-<section id="services-section" class="hero">
-	<div class="hero-body">
-		<div class="columns is-centered is-desktop is-tablet">
-			<div class="column is-narrow has-text-centered">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service1.jpg" width="200px" height="200px" alt="Tree Services" >
-						<div class="card-body">
-						  <h5 class="card-title">Tree Services</h5>
-						  <p class="card-text">We offer a full range of tree services, from regular 
-							  maintenance to large-scale catch-ups. With so many years of tree service 
-							  experience, there are not many species that we haven't worked with. Contact Us 
-							  to shecdule a free estaimate. We're your best option in your area. Whe you think of tress, think us.
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
 
-			<div class="column has-text-centered is-narrow">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service2.jpg" alt="Tree Prunning">
-						<div class="card-body">
-						  <h5 class="card-title">Tree Prunning</h5>
-						  <p class="card-text">We are fully insured and licensed to work throughout North Carolina. Take advantage of our 
-							  pruning services. Your trees will look so good that every passerby will want to take a picture.
-							  Contact Us today to learn more about our Tree health and prunning solutions.
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
-
-			<div class="column has-text-centered is-narrow">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service3.jpg" alt="Tree Removal">
-						<div class="card-body">
-						  <h5 class="card-title">Tree Removal</h5>
-						  <p class="card-text">In some cases, trees have to be removed due to disease, strom damage, or land development, and construction.
-							   Don't tree to attempt to remove trees yourself! Remember, tree removle is perhaps the most dangerous aspect 
-							   of the arboriculture industry. Call us to do it quickly and correctly.
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
-		</div>
-
-		<div class="columns is-centered is-desktop">
-			<div class="column has-text-centered is-narrow">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service4.jpg" alt="Card image cap">
-						<div class="card-body">
-						  <h5 class="card-title">Stump Grinding</h5>
-						  <p class="card-text">We're professionals stump grinders. We count on one of the best tree stump grinding reputations around, and 
-							  a solid customer base. Call us Today! Our prices are very reasonable, and we guarantee you'll be 
-								delighted with the job we perform
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
-
-			<div class="column has-text-centered is-narrow">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service5.jpg" alt="Card image cap">
-						<div class="card-body">
-						  <h5 class="card-title">Tree Root Removal</h5>
-						  <p class="card-text">Removing tree roots ensures your lawn to remain beautiful and safe. We will eliminate the risk 
-							  of tripping and falling. If roots aren't removed, they can keep growing and might require 
-							  you to constantly remove the uprooted roots. Avoid this uncomfortable task and give us a call today.
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
-
-			<div class="column has-text-centered is-narrow">
-				<div class="container">
-					<div class="card" style="width: 18rem;">
-						<img class="card-img-top" src="img/about/service6.jpg" alt="Card image cap">
-						<div class="card-body">
-						  <h5 class="card-title">Garding & Clearing</h5>
-						  <p class="card-text">You have in mind to build and want to clean you land?, 
-							  we offer you the cleaning service of your property. We remove all trees from the roots and 
-							  leave your land ready for construction. We have a professional team ready.
-						  </p>
-						</div>
-					  </div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
-</section>
 
 <!--Gallery Section---=============================================----->
 <!--=================================================================-->
@@ -288,7 +182,68 @@
 		<div class="columns">
 			<div class="column">
 				<h3>Leave us a message</h3>
-				<form name="sentMessage" id="contactForm" novalidate></form>
+				<form method="POST" action="form.php" id="contact-form">
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+						<label class="label"></label>
+					  </div>
+					  <div class="field-body">
+						<div class="field">
+						  <p class="control is-expanded has-icons-left">
+							<input class="input" type="text" placeholder="Name" name="name">
+							<span class="icon is-small is-left">
+							  <i class="fas fa-user"></i>
+							</span>
+						  </p>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="field is-horizontal"> <!--Phone number input-->
+					  <div class="field-label"></div>
+					  <div class="field-body">
+						<div class="field is-expanded">
+						  <div class="field has-addons">
+							<p class="control is-expanded has-icons-left has-icons-right">
+							  <input class="input" type="email" name="email" placeholder="Email">
+							  <span class="icon is-small is-left">
+								  <i class="fas fa-envelope"></i>
+							  </span>
+							</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+						<label class="label"></label>
+					  </div>
+					  <div class="field-body">
+						<div class="field">
+						  <div class="control">
+							<textarea class="textarea" name="message" placeholder="Explain how we can help you"></textarea>
+						  </div>
+						</div>
+					  </div>
+					</div>
+					
+					<div class="field is-horizontal">
+					  <div class="field-label">
+						<!-- Left empty for spacing -->
+					  </div>
+					  <div class="field-body">
+						<div class="field">
+						  <div class="control">
+							<button class="button is-primary" type="submit">
+							  Send message
+							</button>
+						  </div>
+						</div>
+					  </div>
+					</div> <!--End Form-->
+				  </form>
 			</div>
 		</div>
 	</div>
