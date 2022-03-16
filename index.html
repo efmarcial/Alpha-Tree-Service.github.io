@@ -342,7 +342,9 @@
 			<div class="column is-half has-text-centered">
 				<h3 class="subtitle">Leave us a message</h3>
 				<div class="text-center" style="margin-right: 18%;">
-				<form method="POST" action="form.php" id="contact-form">
+				<!---Contact Form ---------------------------------------------->
+				<!--======================================================-->
+				<form name="myForm" method="POST" action="form.php" id="contact-form" onsubmit="return validateForm()">
 					<div class="field is-horizontal">
 					  <div class="field-label is-normal">
 						<label class="label"></label>
@@ -449,6 +451,40 @@
 	})
 </script>
 
+<script>
+
+	function validateForm() {
+		let name = document.forms['myForm']['name'].value;
+		let email = document.forms['myForm']['email'].value;
+		let message = document.forms['myForm']['message'].value;
+
+		var filter = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+		if (name == '') {
+			alert("Name must be filled out");
+			return false;
+		} 
+
+		if (email == ''){
+			alert("email must be filled out");
+			return false;
+		}
+
+		if(message == ""){
+			alert("Message must be filled out");
+			return false;
+		}
+
+		if(email.match(filter)){
+			return true
+		} else {
+			alert('Invalid email address.');
+			return false;
+		}
+	}
+
+
+</script>
 
 </body>
 
