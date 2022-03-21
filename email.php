@@ -2,53 +2,133 @@
 <html>
     <head>
         <title>Message | Fuquay-Varina Tree Service</title>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Tree Service Tree & Stump Removal, Trimming And Cutting Services. Call for a Estimate! Todo en arboles">
+	<meta name="author" content="Eduardo-Fajardo-Marcial" >
+	<meta name="Robots" content="all" />
+	<meta name="keywords" content="Fuaquay-Varina Tree Services, Angier Tree Service, Fuquay-Varina, Angier, Tree Services, Raleigh NC, Dunn NC , Fayetville NC , Benson NC, Stump Removal, Trimming, Cutting Services, tree services, tree services raleigh, tree services fayetville, tree service dunn nc, residential tree services, Commercial tree services, Tree Climbing Specialist, Tree Removal, Stump Grinding. Trimming, Prunning, Chopping, alpha, tree service raleigh, tree sercivies nc, tree services garner, tree services dunn">
+	
+	<!-- Favicons
+    ================================================== -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- static main.css-->
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<!-- W3-CSS -->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	<!-- Link to Bulma IO css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+
+	<!-- Links to font awesome -->
+	<script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9LS3TG3JF"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-N9LS3TG3JF');
+	</script>
+
+
+	<style type="text/css">
+		html {
+			scroll-behavior: smooth;
+			}
+
+	  </style>
     </head>
     <body>
-    <?php
-                    //Import PHPMailer classes into the global namespace
-                    //These must be at the top of your script, not inside a function
-                    use PHPMailer\PHPMailer\PHPMailer;
-                    use PHPMailer\PHPMailer\SMTP;
-                    use PHPMailer\PHPMailer\Exception;
+    <section class="hero">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-transperant is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
+        <a class="navbar-brand" href="index.html">
+			<span class="fa-stack fa-1x">
+				<i class="fa-solid fa-tree fa-2x" style="color: rgb(2, 139, 2);"></i>
+				<i class="fa-solid fa-tree fa-2x fa-inverse" style="color: orange;"></i>
+			</span>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about-section">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+			<li class="nav-item">
+				<a class="nav-link" href="#services-section">Services</a>
+			</li>
+            
+          </ul>
+        </div>
+      </nav>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns has-text-centered">
+                        <div class="column">
+                          
 
-                    //Load Composer's autoloader
-                    require 'vendor/autoload.php';
 
-                    //Create an instance; passing `true` enables exceptions
-                    $mail = new PHPMailer(true);
+                            <?php
+                            //Import PHPMailer classes into the global namespace
+                            //These must be at the top of your script, not inside a function
+                            use PHPMailer\PHPMailer\PHPMailer;
+                            use PHPMailer\PHPMailer\SMTP;
+                            use PHPMailer\PHPMailer\Exception;
 
-                    try {
-                        //Server settings
-                        $mail->SMTPDebug = 3;                      //Enable verbose debug output
-                        $mail->isSMTP();                                            //Send using SMTP
-                        $mail->Host       = 'ssl://smtp.gmail.com';                   //Set the SMTP server to send through
-                        $mail->SMTPSecure = "ssl";
-                        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                        $mail->Username   = 'drdfajardo18@gmail.com';                     //SMTP username
-                        $mail->Password   = 'Ef2083131';
-                        $mail->Port = 465;                                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                            //Load Composer's autoloader
+                            require 'vendor/autoload.php';
 
-                        //Recipients
-                        $mail->From='drdfajardo18@gmail.com';
-                        $mail->addAddress('efmarcial1060@gmail.com');     //Add a recipient
-                                    //Name is optional
+                            //Create an instance; passing `true` enables exceptions
+                            $mail = new PHPMailer(true);
 
-                        //Content
-                        $mail->isHTML(true);                                  //Set email format to HTML
-                        $mail->Subject = 'Here is the subject';
-                        $mail->Body    = $_POST['message'];
-                        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                            try {
+                                //Server settings
+                                $mail->SMTPDebug = 3;                      //Enable verbose debug output
+                                $mail->isSMTP();                                            //Send using SMTP
+                                $mail->Host       = 'ssl://smtp.gmail.com';                   //Set the SMTP server to send through
+                                $mail->SMTPSecure = "ssl";
+                                $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+                                $mail->Username   = 'drdfajardo18@gmail.com';                     //SMTP username
+                                $mail->Password   = 'Ef2083131';
+                                $mail->Port = 465;                                                  //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-                        
-                        echo "<h1>Thank you, Your Message has been sent</h1>";
-                        echo "See you in a bit";
-                    } catch (Exception $e) {
-                        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-                        
-                    }
+                                //Recipients
+                                $mail->From='drdfajardo18@gmail.com';
+                                $mail->addAddress('efmarcial1060@gmail.com');     //Add a recipient
+                                            //Name is optional
 
-                        ?>
+                                //Content
+                                $mail->isHTML(true);                                  //Set email format to HTML
+                                $mail->Subject = 'Here is the subject';
+                                $mail->Body    = $_POST['message'];
+                                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+                                
+                                echo "<h1>Thank you, Your Message has been sent</h1>";
+                                echo "See you in a bit";
+                            } catch (Exception $e) {
+                                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                                
+                            }
+
+                                ?>
+
+                        </div>
+                    </div>
+                </div>        
+            </div>
+    </section>
     </body>
 </html>
 
