@@ -91,7 +91,10 @@
 
                             //Create an instance; passing `true` enables exceptions
                             $mail = new PHPMailer(true);
-
+                            $name = $_POST['name'];
+                            $messaeg = $_POST['message'];
+                            $email = $_POST['email'];
+                            $number = $_POST['number'];
                             try {
                                 //Server settings
                                 $mail->SMTPDebug = 3;                      //Enable verbose debug output
@@ -111,7 +114,7 @@
                                 //Content
                                 $mail->isHTML(true);                                  //Set email format to HTML
                                 $mail->Subject = 'Website Conact From ';
-                                $mail->Body    ="Hello I'm {$_POST['name']}, <br> {$_POST['message']} <br> my phone number is {$_POST[number]}.";
+                                $mail->Body    ="Hello I'm {$name}, <br> {$message} <br> my phone number is {$number}.";
 
                                 
                                 echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile' style='text-shadow: 2px 2px 2px black;'>Thank you, Your Message has been sent</h1>";
