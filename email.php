@@ -19,12 +19,12 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'ssl://smtp.gmail.com:465';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'drdfajardo18@gmail.com';                     //SMTP username
-    $mail->Password   = 'Ef2083131';                                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Username   = 'efmarcial1060@gmail.com';                     //SMTP username
+    $mail->Password   = 'Ef@2083131';                                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->From='drdfajardo18@gmail.com';
-    $mail->addAddress('efmarcial1060@gmail.com');     //Add a recipient
+    $mail->From='efmarcial1060@gmail.com';
+    $mail->addAddress('drdfajardo18@gmail.com');     //Add a recipient
                    //Name is optional
 
     //Content
