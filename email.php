@@ -130,7 +130,7 @@
 
                         </div>
                     </div>
-                    <div class="columns is-desktop is-centered" style="margin-top:8%;">
+                        <div class="columns is-desktop is-centered">
                             <div class="column has-text-centered">
                                 <h5 class="title has-text-white is-size-5-desktop is-size-5-tablet is-size-5-mobile" style="text-shadow: 2px 2px 2px black;">ADDRESS</h5>
                                 <hr style="margin-left: 25%;width: 50%;height:2px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
