@@ -130,7 +130,7 @@
 
                         </div>
                     </div>
-                    <div class="columns is-desktop is-centered custom-column">
+                    <div class="columns is-desktop is-centered" style="margin-top:8%;">
                             <div class="column has-text-centered">
                                 <h5 class="title has-text-white is-size-5-desktop is-size-5-tablet is-size-5-mobile" style="text-shadow: 2px 2px 2px black;">ADDRESS</h5>
                                 <hr style="margin-left: 25%;width: 50%;height:2px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
@@ -150,13 +150,13 @@
                                 
                                 <ul class="subtitle has-text-white is-size-6-desktop is-size-6-tablet is-size-6-mobile" style="text-shadow: 2px 2px 2px black;">
                                     <li>
-                                        <strong class="has-white-text" style="text-shadow: 2px 2px 2px black;">Monday-Friday:</strong> 8:00am - 5:00pm
+                                        <strong class="has-text-white" style="text-shadow: 2px 2px 2px black;">Monday-Friday:</strong> 8:00am - 5:00pm
                                     </li>
                                     <li>
-                                        <strong class="has-white-text" style="text-shadow: 2px 2px 2px black;">Saturday:</strong> 8:00am - 12:00pm
+                                        <strong class="has-text-white" style="text-shadow: 2px 2px 2px black;">Saturday:</strong> 8:00am - 12:00pm
                                     </li>
                                     <li>
-                                        <strong class="has-white-text" style="text-shadow: 2px 2px 2px black;">Sunday:</strong> CLOSED
+                                        <strong class="has-text-white" style="text-shadow: 2px 2px 2px black;">Sunday:</strong> CLOSED
                                     </li>
                                 </ul>
                             </div>
