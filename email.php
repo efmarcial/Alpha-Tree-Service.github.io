@@ -41,7 +41,7 @@
 
                         
                         echo "<h1>Thank you, Your Message has been sent</h1>";
-                        echo "See you in a bit"
+                        echo "See you in a bit";
                     } catch (Exception $e) {
                         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                         
