@@ -17,10 +17,11 @@ try {
     //Server settings
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'ssl://smtp.gmail.com:465';                     //Set the SMTP server to send through
+    $mail->Host       = 'ssl://smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'drdfajardo18@gmail.com';                     //SMTP username
-    $mail->Password   = 'Ef2083131';                                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Password   = 'Ef2083131';
+    $mail->Port = 465                                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
     $mail->From='drdfajardo18@gmail.com';
