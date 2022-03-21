@@ -115,10 +115,10 @@
                                 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
                                 
-                                echo "<h1>Thank you, Your Message has been sent</h1>";
-                                echo "<h4>We will be in contact with you soon</h4>";
+                                echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile'>Thank you, Your Message has been sent</h1>";
+                                echo "<h4 class='subtitle is-size-3-desktop is-size-4-tablet is-size-4-mobile'>We will be in contact with you soon</h4>";
                             } catch (Exception $e) {
-                                echo "<h1>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
+                                echo "<h1 class='title has-text-white is-size-4-desktop is-size-5-tablet is-size-5-mobile'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
                                 
                             }
 
