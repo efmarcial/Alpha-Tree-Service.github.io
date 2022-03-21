@@ -73,7 +73,7 @@
         </div>
       </nav>
             <div class="hero-body">
-                <div class="container-fluid" style="margin-top:-5%;">
+                <div class="container-fluid" >
                     <div class="columns has-text-centered">
                         <div class="column">
                           
@@ -111,7 +111,7 @@
                                 //Content
                                 $mail->isHTML(true);                                  //Set email format to HTML
                                 $mail->Subject = 'Website Conact From ';
-                                $mail->Body    ="Hello I'm $_POST['name'], \n $_POST['message'] \n my phone number is $_POST[number].";
+                                $mail->Body    ="Hello I'm {$_POST['name']}, <br> {$_POST['message']} <br> my phone number is {$_POST[number]}.";
 
                                 
                                 echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile' style='text-shadow: 2px 2px 2px black;'>Thank you, Your Message has been sent</h1>";
