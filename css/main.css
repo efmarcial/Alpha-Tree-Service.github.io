@@ -97,3 +97,8 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
+.custom-column {
+    margin-top: 8%;
+}
