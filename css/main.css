@@ -82,3 +82,25 @@ body, html {
         margin-left: 18%;
     }
 }
+
+.parallax3 {
+    /* The image used */
+    background-image: url('img/image1.jpg');
+
+    /* Full height */
+
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:720px) and (min-width:300px){
+    .parallax3 {
+        background-attachment: fixed;
+    }
+    
+}
