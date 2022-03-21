@@ -45,7 +45,7 @@
 	  </style>
     </head>
     <body>
-    <section class="hero parallax3">
+    <section class="hero is-fullheight parallax3">
     <nav class="navbar navbar-expand-lg  navbar-light bg-transperant is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
         <a class="navbar-brand" href="index.html">
 			<span class="fa-stack fa-1x">
