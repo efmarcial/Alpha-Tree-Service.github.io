@@ -73,7 +73,7 @@
         </div>
       </nav>
             <div class="hero-body">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="columns has-text-centered">
                         <div class="column">
                           
