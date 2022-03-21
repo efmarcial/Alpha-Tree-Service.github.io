@@ -46,7 +46,7 @@
     </head>
     <body>
     <section class="hero parallax3">
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-transperant is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
+    <nav class="navbar navbar-expand-lg  navbar-light bg-transperant is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
         <a class="navbar-brand" href="index.html">
 			<span class="fa-stack fa-1x">
 				<i class="fa-solid fa-tree fa-2x" style="color: rgb(2, 139, 2);"></i>
@@ -116,7 +116,7 @@
 
                                 
                                 echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile'>Thank you, Your Message has been sent</h1>";
-                                echo "<h4 class='subtitle is-size-3-desktop is-size-4-tablet is-size-4-mobile'>We will be in contact with you soon</h4>";
+                                echo "<h4 class='subtitle has-text-white is-size-3-desktop is-size-4-tablet is-size-4-mobile'>We will be in contact with you soon</h4>";
                             } catch (Exception $e) {
                                 echo "<h1 class='title has-text-white is-size-4-desktop is-size-5-tablet is-size-5-mobile'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
                                 
