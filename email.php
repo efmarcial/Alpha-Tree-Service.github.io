@@ -36,7 +36,6 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
@@ -91,12 +90,42 @@ gtag('config', 'G-N9LS3TG3JF');
 </head>
 <body>
 <section id="thank-you" class="hero ">
-        <div class="hero-head">
-
+<nav class="navbar navbar-expand-lg  navbar-dark bg-transperant is-size-4-desktop is-size-4-tablet is-size-3-mobile" style="font-family: 'League Gothic';">
+        <a class="navbar-brand" href="index.html">
+			<span class="fa-stack fa-1x">
+				<i class="fa-solid fa-tree fa-2x" style="color: rgb(2, 139, 2);"></i>
+				<i class="fa-solid fa-tree fa-2x fa-inverse" style="color: orange;"></i>
+			</span>
+            
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#about-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+			<li class="nav-item">
+				<a class="nav-link" href="#services-section">Services</a>
+			</li>
+            
+          </ul>
         </div>
+      </nav>
 
         <div class="hero-body">
-
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h1>Thank you, Your message has been sent</h1>
+                        <h4>We will be in touch with you soon.</h4>
+                    </div>
+                </div>
+            </div>
         </div>
 </section>
 <footer class="footer has-background-success">
