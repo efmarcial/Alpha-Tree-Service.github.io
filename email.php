@@ -1,4 +1,10 @@
-<?php
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Message | Fuquay-Varina Tree Service</title>
+    </head>
+    <body>
+    <?php
                     //Import PHPMailer classes into the global namespace
                     //These must be at the top of your script, not inside a function
                     use PHPMailer\PHPMailer\PHPMailer;
@@ -33,11 +39,17 @@
                         $mail->Body    = $_POST['message'];
                         $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-                        $mail->send();
-                        echo "Thank you, Your Message has been sent";
+                        
+                        echo "<h1>Thank you, Your Message has been sent</h1>";
+                        echo "See you in a bit"
                     } catch (Exception $e) {
                         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                         
                     }
 
                         ?>
+
+    </body>
+</html>
+
+
