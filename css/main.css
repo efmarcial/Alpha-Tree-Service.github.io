@@ -97,3 +97,9 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+@media screen and (max-width:720px) and (min-width:300px){
+    .parallax3 {
+        background-attachment:scroll;
+    }
+    
+}
