@@ -73,7 +73,7 @@
         </div>
       </nav>
             <div class="hero-body">
-                <div class="container-fluid">
+                <div class="container-fluid" style="margin-top:-5%;">
                     <div class="columns has-text-centered">
                         <div class="column">
                           
@@ -110,16 +110,15 @@
 
                                 //Content
                                 $mail->isHTML(true);                                  //Set email format to HTML
-                                $mail->Subject = 'Here is the subject';
-                                $mail->Body    = $_POST['message'];
-                                $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                                $mail->Subject = 'Website Conact From ';
+                                $mail->Body    ="Hello I'm $_POST['name'], \n $_POST['message'] \n my phone number is $_POST[number].";
 
                                 
                                 echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile' style='text-shadow: 2px 2px 2px black;'>Thank you, Your Message has been sent</h1>";
                                 echo "<h4 class='subtitle has-text-white is-size-3-desktop is-size-4-tablet is-size-4-mobile' style='text-shadow: 2px 2px 2px black;'>We will be in contact with you soon</h4>";
                             } catch (Exception $e) {
-                                echo "<h1 class='title has-text-white is-size-4-desktop is-size-5-tablet is-size-5-mobile'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
-                                
+                                echo "<h1 class='title has-text-white is-size-1-desktop is-size-3-tablet is-size-3-mobile' style='text-shadow:2px 2px 2px black;'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</h1>";
+                                echo "<h4 class='subtitle has-text-white is-size-3-desktop is-szie-4-tablet is-size-3-mobile' style='text-shadow:2px 2px 2px black'>Please try giving us a call instead.</h4>"
                             }
 
                                 ?>

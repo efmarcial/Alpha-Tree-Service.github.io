@@ -370,13 +370,29 @@
 					  <div class="field-body">
 						<div class="field">
 						  <p class="control is-expanded has-icons-left">
-							<input class="input" type="text" placeholder="Name" name="name">
+							<input class="input" type="text" placeholder="Name" name="name" required>
 							<span class="icon is-small is-left">
 							  <i class="fas fa-user"></i>
 							</span>
 						  </p>
 						</div>
 					  </div>
+					</div>
+
+					<div class="field is-horizontal">
+						<div class="field-lable is-normal">
+							<label class="lable"></label>
+						</div>
+						<div class="field-body">
+							<div class="field">
+								<p class="control is-expanded has-icons-left">
+									<input class="input" type="text" placeholder="Phone number" name="number" required>
+									<span class="icon is-small is-left">
+										<i class="fa fa-phone"></i>
+									</span>
+								</p>
+							</div>
+						</div>
 					</div>
 					
 					<div class="field is-horizontal"> <!--Phone number input-->
@@ -385,7 +401,7 @@
 						<div class="field is-expanded">
 						  <div class="field has-addons">
 							<p class="control is-expanded has-icons-left has-icons-right">
-							  <input class="input" type="email" name="email" placeholder="Email">
+							  <input class="input" type="email" name="email" placeholder="Email" required>
 							  <span class="icon is-small is-left">
 								  <i class="fas fa-envelope"></i>
 							  </span>
@@ -403,7 +419,7 @@
 					  <div class="field-body">
 						<div class="field">
 						  <div class="control">
-							<textarea class="textarea" name="message" placeholder="Explain how we can help you"></textarea>
+							<textarea class="textarea" name="message" placeholder="Explain how we can help you" required></textarea>
 						  </div>
 						</div>
 					  </div>
