@@ -362,7 +362,7 @@
 				<div class="text-centered " >
 				<!---Contact Form ---------------------------------------------->
 				<!--======================================================-->
-				<form  name="myForm" method="POST" action="email.php" id="contact-form" onsubmit="return validateForm()">
+				<form  name="myForm" method="POST" action="email.php" id="contact-form" >
 					<div class="field is-horizontal">
 					  <div class="field-label is-normal">
 						<label class="label"></label>
@@ -416,7 +416,7 @@
 					  <div class="field-body">
 						<div class="field">
 						  <div class="control">
-							<button class="button is-primary" type="submit">
+							<button class="button is-primary" type="submit" onclick="validateForm()">
 							  Send message
 							</button>
 						  </div>
