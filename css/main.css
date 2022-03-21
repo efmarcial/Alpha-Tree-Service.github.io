@@ -27,6 +27,8 @@ body, html {
     
 }
 
+
+
 .parallax2 {
     /* The image used */
     background-image: url("img/test-image.png");
@@ -67,4 +69,16 @@ body, html {
 
 .portfolio-item {
     margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1980px) and (min-width:480px){
+    .contact-div {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (min-width:480px) {
+    .contact-div {
+        margin-left: 18%;
+    }
 }
