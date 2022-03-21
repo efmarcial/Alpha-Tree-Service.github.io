@@ -124,6 +124,48 @@
 
                                 ?>
 
+                        <div class="columns is-desktop is-centered">
+                            <div class="column has-text-centered">
+                                <h5 class="title is-size-5-desktop is-size-5-tablet is-size-5-mobile">ADDRESS</h5>
+                                <hr style="margin-left: 25%;width: 50%;height:2px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
+                                <ul class="subtitle is-size-6-desktop is-size-6-tablet is-size-6-mobile">
+                                    <li>
+                                        Fuaquay-Varina / Angier, 
+                                    </li>
+                                    <li>
+                                        North Carolina
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <h5 class="title is-size-5-desktop is-size-5-tablet is-size-5-mobile">WORKING HOURS</h5>
+                                <hr  style="margin-left:25%;width: 50%;height:2px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
+                                
+                                <ul class="subtitle is-size-6-desktop is-size-6-tablet is-size-6-mobile">
+                                    <li>
+                                        <strong>Monday-Friday:</strong> 8:00am - 5:00pm
+                                    </li>
+                                    <li>
+                                        <strong>Saturday:</strong> 8:00am - 12:00pm
+                                    </li>
+                                    <li>
+                                        <strong>Sunday:</strong> CLOSED
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <h5 class="title is-size-5-desktop is-size-5-tablet is-size-5-mobile">CONTACT INFO</h5>
+                                <hr style="margin-left:25%; width: 50%;height:2px;margin-top: -3% ;border-width:0;color:yellow;background-color:yellow">
+                                <a href="tel:9196251417">
+                                    <p class="subtitle is-size-6-desktop is-size-6-tablet is-size-6-mobile"><i class="fa fa-phone">(919)625-1417</i></p>
+                                </a>	
+                            </div>
+                        </div>
+
+                            
+
                         </div>
                     </div>
                 </div>        
