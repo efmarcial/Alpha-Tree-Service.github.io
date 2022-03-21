@@ -43,9 +43,82 @@ try {
 
     ?>
 
-    <!-- INCLUDE YOUR SUCCESS MESSAGE BELOW -->
-    Thanks for getting in touch. We'll get back to you
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You | Fuquay-Varina Tree Service</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Tree Service Tree & Stump Removal, Trimming And Cutting Services. Call for a Estimate! Todo en arboles">
+	<meta name="author" content="Eduardo-Fajardo-Marcial" >
+	<meta name="Robots" content="all" />
+    <meta name="keywords" content="Fuaquay-Varina Tree Services, Angier Tree Service, Fuquay-Varina, Angier, Tree Services, Raleigh NC, Dunn NC , Fayetville NC , Benson NC, Stump Removal, Trimming, Cutting Services, tree services, tree services raleigh, tree services fayetville, tree service dunn nc, residential tree services, Commercial tree services, Tree Climbing Specialist, Tree Removal, Stump Grinding. Trimming, Prunning, Chopping, alpha, tree service raleigh, tree sercivies nc, tree services garner, tree services dunn">
+	
+    <!-- Favicons
+    ================================================== -->
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+<!-- static main.css-->
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<!-- W3-CSS -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<!-- Link to Bulma IO css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 
+<!-- Links to font awesome -->
+<script src="https://kit.fontawesome.com/4156d66cb5.js" crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N9LS3TG3JF"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-N9LS3TG3JF');
+</script>
 
 
+<style type="text/css">
+    html {
+        scroll-behavior: smooth;
+        }
+
+  </style>
+</head>
+<body>
+<section id="thank-you" class="hero ">
+        <div class="hero-head">
+
+        </div>
+
+        <div class="hero-body">
+
+        </div>
+</section>
+<footer class="footer has-background-success">
+	<div class="content has-text-centered">
+		<p>
+			<a href="www.facebook.com">
+				<span class="fa-stack fa-2x">
+					<i class="fa-solid fa-circle fa-stack-2x"></i>
+					<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+				</span>
+				
+			</a>
+
+			<a href="www.google.com">
+				<span class="fa-stack fa-2x">
+					<i class="fa-solid fa-circle fa-stack-2x"></i>
+					<i class="fa fa-google fa-stack-1x fa-inverse"></i>
+				</span>
+			</a>
+		</p>
+		<p class="has-text-white"><span>&COPY;</span>2022 All Rights Reserved </p>
+	</div>
+</footer>
+</body>
+</html>
