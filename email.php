@@ -114,7 +114,7 @@
                                 //Content
                                 $mail->isHTML(true);                                  //Set email format to HTML
                                 $mail->Subject = 'Website Conact From ';
-                                $mail->Body    ="Hello I'm {$name}, <br> {$message} <br> my phone number is {$number}.";
+                                $mail->Body    =$messaeg;
 
                                 
                                 echo "<h1 class='has-text-white title is-size-1-desktop is-size-3-tablet is-size-3-mobile' style='text-shadow: 2px 2px 2px black;'>Thank you, Your Message has been sent</h1>";
