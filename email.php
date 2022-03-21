@@ -1,4 +1,4 @@
-<?php
+
 
 <?php
 //Import PHPMailer classes into the global namespace
@@ -25,8 +25,8 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress($_POST['email'], $_POST['name']);     //Add a recipient
+    $mail->setFrom($_POST['email'], $_POST['name']);
+    $mail->addAddress('efmarcial1060@gmail.com', 'eduardo');     //Add a recipient
     $mail->addAddress('ellen@example.com');               //Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
