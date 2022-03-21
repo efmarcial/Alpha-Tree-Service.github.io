@@ -20,17 +20,12 @@ try {
     $mail->Host       = 'ssl://smtp.gmail.com:465';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'drdfajardo18@gmail.com';                     //SMTP username
-    $mail->Password   = 'Ef2083131';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Password   = 'Ef2083131';                                                   //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('drdfajardo18@gmail.com', $_POST['name']);
-    $mail->addAddress('efmarcial1060@gmail.com')
-
-    //Attachments
-    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    $mail->From='drdfajardo18@gmail.com';
+    $mail->addAddress('efmarcial1060@gmail.com');     //Add a recipient
+                   //Name is optional
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
